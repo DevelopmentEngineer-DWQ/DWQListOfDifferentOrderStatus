@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DWQMineOrderButtonController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6Y-l7-O0A">
+                    <rect key="frame" x="0.0" y="243" width="375" height="30"/>
+                    <color key="backgroundColor" red="0.3779875936" green="1" blue="0.087966313520000006" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="MTM-CK-pgZ"/>
+                    </constraints>
+                    <state key="normal" title="我的订单-----------&gt;全部"/>
+                    <connections>
+                        <action selector="toAll:" destination="-1" eventType="touchUpInside" id="w1w-d6-fXc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZyP-QY-ZuA">
+                    <rect key="frame" x="0.0" y="281" width="98" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.73780321750297206" blue="0.22957321259419006" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="F7W-CW-kWD"/>
+                        <constraint firstAttribute="width" constant="98" id="xhE-tl-h3n"/>
+                    </constraints>
+                    <state key="normal" title="待付款"/>
+                    <connections>
+                        <action selector="PendingPayment:" destination="-1" eventType="touchUpInside" id="2TC-Gj-ZsW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXw-5x-afM">
+                    <rect key="frame" x="106" y="281" width="85" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.092893829725002819" blue="0.16718766493177406" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="5l0-r1-Ivp"/>
+                        <constraint firstAttribute="width" constant="85" id="C5b-LY-IYF"/>
+                    </constraints>
+                    <state key="normal" title="待发货"/>
+                    <connections>
+                        <action selector="waitingFoDelivery:" destination="-1" eventType="touchUpInside" id="Ve4-HQ-Cff"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDr-ps-lF1">
+                    <rect key="frame" x="199" y="281" width="84" height="30"/>
+                    <color key="backgroundColor" red="0.17854233244457707" green="0.18110910439140104" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="87Y-3H-Y4W"/>
+                    </constraints>
+                    <state key="normal" title="待收货">
+                        <color key="titleColor" red="1" green="0.1334377672" blue="0.27894197990000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="watingReceivingGoods:" destination="-1" eventType="touchUpInside" id="EkC-8U-wDE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Yf-U5-jjv">
+                    <rect key="frame" x="291" y="281" width="84" height="30"/>
+                    <color key="backgroundColor" red="0.2295887568169902" green="1" blue="0.89045742114083903" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="fpk-rh-Vx4"/>
+                        <constraint firstAttribute="width" constant="84" id="pPR-0N-mBn"/>
+                    </constraints>
+                    <state key="normal" title="待评价"/>
+                    <connections>
+                        <action selector="waitingEvaluate:" destination="-1" eventType="touchUpInside" id="gX0-0r-iZw"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DWQ-LOGO.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="WMn-rn-OAH">
+                    <rect key="frame" x="67" y="64" width="240" height="158"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="158" id="9Ps-QP-t8g"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="简   书：" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4sS-R4-Acf">
+                    <rect key="frame" x="9" y="359" width="89" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.1334377672" blue="0.27894197990000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GitHub：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZP-mF-jaw">
+                    <rect key="frame" x="16" y="410" width="70" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="1" green="0.1334377672" blue="0.27894197990000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="iOS攻城狮DWQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLQ-RB-kXr">
+                    <rect key="frame" x="106" y="359" width="269" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DevelopmentEngineer-DWQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JB4-0T-lfD">
+                    <rect key="frame" x="106" y="414" width="253" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="谢谢您的关注和点赞" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WdZ-8X-Ivn">
+                    <rect key="frame" x="90" y="484" width="193" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.28675570830000002" blue="0.17443012050000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="8Yf-U5-jjv" secondAttribute="trailing" id="82p-9I-NDf"/>
+                <constraint firstItem="gDr-ps-lF1" firstAttribute="leading" secondItem="yXw-5x-afM" secondAttribute="trailing" constant="8" id="Dic-0z-ynf"/>
+                <constraint firstItem="j6Y-l7-O0A" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="EAN-mB-PO2"/>
+                <constraint firstItem="WMn-rn-OAH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="HJJ-9y-4zF"/>
+                <constraint firstAttribute="trailing" secondItem="j6Y-l7-O0A" secondAttribute="trailing" id="KyR-AC-tSq"/>
+                <constraint firstItem="WMn-rn-OAH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="67" id="OE3-cd-uxc"/>
+                <constraint firstItem="ZyP-QY-ZuA" firstAttribute="top" secondItem="j6Y-l7-O0A" secondAttribute="bottom" constant="8" id="V3c-vI-akp"/>
+                <constraint firstItem="j6Y-l7-O0A" firstAttribute="top" secondItem="WMn-rn-OAH" secondAttribute="bottom" constant="21" id="Zrm-l5-ARa"/>
+                <constraint firstAttribute="trailing" secondItem="WMn-rn-OAH" secondAttribute="trailing" constant="68" id="bup-wf-dQM"/>
+                <constraint firstItem="yXw-5x-afM" firstAttribute="top" secondItem="j6Y-l7-O0A" secondAttribute="bottom" constant="8" id="dYb-JS-fMr"/>
+                <constraint firstItem="ZyP-QY-ZuA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hab-8D-lVc"/>
+                <constraint firstItem="yXw-5x-afM" firstAttribute="leading" secondItem="ZyP-QY-ZuA" secondAttribute="trailing" constant="8" id="i8e-TQ-xwu"/>
+                <constraint firstItem="8Yf-U5-jjv" firstAttribute="leading" secondItem="gDr-ps-lF1" secondAttribute="trailing" constant="8" id="n5Z-OY-7ks"/>
+                <constraint firstItem="8Yf-U5-jjv" firstAttribute="top" secondItem="j6Y-l7-O0A" secondAttribute="bottom" constant="8" id="rex-24-VzP"/>
+                <constraint firstItem="gDr-ps-lF1" firstAttribute="top" secondItem="j6Y-l7-O0A" secondAttribute="bottom" constant="8" id="uoQ-iP-mPL"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="DWQ-LOGO.jpeg" width="200" height="160"/>
+    </resources>
+</document>
